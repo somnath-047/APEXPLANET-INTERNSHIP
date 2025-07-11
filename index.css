@@ -1,0 +1,75 @@
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e6f2ff;
+    margin: 2rem;
+    padding: 0;
+    color: #2c3e50;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: #0056b3;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #00897b;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #cfd8dc;
+    padding-bottom: 0.3rem;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.03);
+}
+
+/* Links */
+a {
+    color: #1e88e5;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0d47a1;
+    text-decoration: underline;
+}
+
+/* Lists */
+ul {
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Paragraphs */
+p {
+    max-width: 700px;
+    margin-bottom: 1rem;
+}
+
+/* Responsive container (optional) */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 1rem;
+}
