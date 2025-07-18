@@ -1,0 +1,124 @@
+/* General body styling with animation and 3D look */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(145deg, #e6f2ff, #ffffff);
+    margin: 2rem;
+    padding: 0;
+    color: #2c3e50;
+    line-height: 1.8;
+    font-size: 16px;
+    perspective: 1000px;
+    animation: fadeIn 1s ease-in;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateZ(-200px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(0) scale(1);
+    }
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: #0cd55d;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    transform: rotateX(5deg);
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.6s ease;
+}
+
+h1:hover {
+    transform: rotateX(0deg) scale(1.05);
+}
+
+h2 {
+    color: #00897b;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #cfd8dc;
+    padding-bottom: 0.3rem;
+    transform: rotateY(2deg);
+    transition: transform 0.5s ease;
+}
+
+h2:hover {
+    transform: rotateY(0deg) scale(1.03);
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    transform: perspective(800px) rotateY(3deg);
+}
+
+img:hover {
+    transform: scale(1.05) rotateY(0deg);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Links */
+a {
+    color: #1e88e5;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+a:hover {
+    color: #a80b0d;
+    text-decoration: underline;
+    transform: translateY(-2px) scale(1.05);
+}
+
+/* Lists */
+ul {
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+    transform: rotateX(1deg);
+    transition: transform 0.5s;
+}
+
+ul:hover {
+    transform: rotateX(0deg);
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+ul li:hover {
+    transform: scale(1.03);
+}
+
+/* Paragraphs */
+p {
+    max-width: 700px;
+    margin-bottom: 1rem;
+    transform: translateZ(10px);
+    transition: transform 0.4s ease;
+}
+
+p:hover {
+    transform: scale(1.02) translateZ(15px);
+}
+
+/* Responsive container */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 1rem;
+    transform-style: preserve-3d;
+}
